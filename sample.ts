@@ -16,6 +16,3 @@ tokens.forEach((token: TokenType | string) => {
     console.log(`Found numeric literal: ${token.content}`);
   }
 });
-
-// Mandatory. Otherwise, top-level await will not work.
-export {};
