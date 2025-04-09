@@ -1,3 +1,8 @@
 {
-  "extends": "@tsconfig/node22/tsconfig.json"
+  "extends": "prismjs/tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+	"allowImportingTsExtensions": true
+  },
+  "include": ["./node_modules/prismjs/src/**/*.ts", "./sample.ts"]
 }
