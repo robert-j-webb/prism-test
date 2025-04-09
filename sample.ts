@@ -1,0 +1,12 @@
+import { Prism, Token } from "prismjs";
+
+const prism = new Prism();
+const tokens = prism.tokenize(
+  `var foo = 0;`,
+  prism.components.getLanguage("javascript")!
+);
+tokens.forEach((token: Token | string) => {
+  if (token instanceof Token && token.type === "number") {
+    console.log(`Found numeric literal: ${token.content}`);
+  }
+});
