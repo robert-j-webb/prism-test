@@ -1,3 +1,5 @@
+import { Token as TokenType } from "prismjs/src/core.ts";
+
 let { Prism, Token } = await import("prismjs/src/core.ts");
 let { default: javascript } = await import("prismjs/src/languages/prism-javascript.ts");
 
@@ -9,7 +11,7 @@ const tokens = prism.tokenize(
   prism.components.getLanguage("javascript")!
 );
 
-tokens.forEach((token) => {
+tokens.forEach((token: TokenType | string) => {
   if (token instanceof Token && token.type === "number") {
     console.log(`Found numeric literal: ${token.content}`);
   }
