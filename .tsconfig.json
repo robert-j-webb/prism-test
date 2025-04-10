@@ -1,7 +1,3 @@
 {
-  "extends": "prismjs/tsconfig.json",
-  "compilerOptions": {
-    "module": "ESNext",
-    "allowImportingTsExtensions": true
-  }
+  "extends": "prismjs/tsconfig.json"
 }
