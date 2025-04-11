@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "tsx sample.ts"
+    "start": "tsx sample.ts",
+    "common": "node common.cjs"
   },
   "keywords": [],
   "author": "",
